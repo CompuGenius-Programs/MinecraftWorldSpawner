@@ -1,8 +1,10 @@
 This project is built to be used alongside a Minecraft Server Docker container. It is designed to be used with the [itzg/minecraft-server](https://hub.docker.com/r/itzg/minecraft-server) image, but can be used with any Minecraft server image that uses the same volume structure.
 
 ## Usage
-Be sure to edit `config.json` to define the directory of the template Minecraft server files and the directory of the Minecraft server files. The template directory should be the directory of the Minecraft server files that you want to use as the template. The server directory should be the directory of the Minecraft server files that the server will use.
-Also be sure to set the last used port and the max port opened on your router.
+**TEMPLATE_PATH** - The path to the template server that will be copied to create new servers.<br />
+**SERVERS_PATH** - The path to the folder that will contain all the servers.<br />
+**CURRENT_PORT** - The most recent port that was used for a server.<br />
+**MAX_PORT** - The maximum port opened on your router for the servers.
 
 Sample `config.json`:
 ```json
