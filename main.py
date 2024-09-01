@@ -47,7 +47,7 @@ def main():
         print("Config file not found. Creating a new one.")
         with open("config.json", 'w') as file:
             json.dump(
-                {"template_path": "D:/Minecraft/template", "servers_path": "D:/Minecraft/", "current_port": 25564, "max_port": 25580},
+                {"template_path": "D:/Minecraft/template", "servers_path": "D:/Minecraft/", "current_port": 25564, "max_port": 25564},
                 file)
 
     with open("config.json", 'r') as file:
